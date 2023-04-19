@@ -128,7 +128,7 @@ module.exports = class CompareHands {
     let [ranks, occurences] = this.rankOccurences(hand);
     if (!occurences.includes(2) ||
       occurences.indexOf(2) !== occurences.lastIndexOf(2)) { return 0; }
-    let rankOfPair = ranks[occurences.in  dexOf(2)];
+    let rankOfPair = ranks[occurences.indexOf(2)];
     let mainScore = this.rankToPoint(rankOfPair);
     let kickers = hand.cards.filter(({ rank }) => rank !== rankOfPair);
     return this.scoreWithKickers(mainScore, kickers);
