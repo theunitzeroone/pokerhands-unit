@@ -15,4 +15,4 @@ console.log(CompareHands.compare(hand1, hand2));
 // console.log(CompareHands.rankOccurences(hand2));
 // console.log(hand2);
 //console.log(CompareHands.compare(hand1, hand2));
-console.log(CompareHands.isStraight(hand2));
+//console.log(CompareHands.isStraight(hand2));
